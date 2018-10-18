@@ -1,0 +1,27 @@
+.row{
+	position: relative;
+	margin-top: 5em;
+	background-color: transparent !important;
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	font-family: "Courier New" !important; 
+}
+
+p.subject{
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 1.25em;
+
+}
+
+p.className{
+
+	font-weight: bold;
+}
+
