@@ -6,20 +6,51 @@
     <title>Unity WebGL Player | ApplePicker</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="WebGL.css">
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
+    <!--bootstrap-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/ApplePickerWebGL.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
+
+    <div class="container-fluid">
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Education.html">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Job Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+    </ul>
+
+  </nav>
+
+
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div id="gameContainer" style="width: 800px; height: 500px; "></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">ApplePicker</div>
-      </div>
-    </div>
+      </div><!--end of gameContainer-->
+    </div><!--end of webgl content-->
+ 
+</div>
+  </div><!--end of bootstrap container-->
   </body>
 </html>
