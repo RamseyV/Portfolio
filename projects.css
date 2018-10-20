@@ -1,0 +1,23 @@
+body{
+
+
+	font-family: "Courier New" !important; 
+}
+
+.row{
+	outline: 1px solid;
+	top:100px;
+	position: relative;
+	text-align: center;
+}
+
+.row + .row{
+	border-top: 0;
+}
+#project{
+	padding:20px;
+}
+#description{
+	padding:20px;
+	padding-right: 50px;
+}
